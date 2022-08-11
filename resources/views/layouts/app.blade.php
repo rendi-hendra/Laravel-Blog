@@ -41,11 +41,11 @@
 <body class="font-sans antialiased">
     <x-jet-banner />
 
-    <div class="min-h-screen bg-[#171923]">
+    <div class="min-h-screen bg-[#171923] pb-20">
         @livewire('navigation-menu')
 
         <!-- Page Content -->
-        <main>
+        <main class="">>
             {{ $slot }}
         </main>
     </div>
@@ -56,8 +56,7 @@
 
 
     {{-- Javascripts --}}
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
         $(function() {
             //caches a jQuery object containing the header element

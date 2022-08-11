@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\posting;
 use Illuminate\Http\Request;
+use Cviebrock\EloquentSluggable\Services\SlugService;
 
 class DashboardPostController extends Controller
 {
@@ -35,7 +36,11 @@ class DashboardPostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'title' => 'required',
+            'body' => 'required',
+            'category_id' => 'required'
+        ]);
     }
 
     /**
@@ -81,5 +86,11 @@ class DashboardPostController extends Controller
     public function destroy(posting $posting)
     {
         //
+    }
+
+    public function checkSlug(Request $request)
+    {
+        $slug = SlugService::createSlug(Posting::class, "slug", $request->judul);
+        return response()->json(['slug' => $slug]);
     }
 }

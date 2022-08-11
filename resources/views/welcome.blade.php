@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
@@ -159,20 +158,18 @@
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container text-white">
             <a class="navbar-brand fw-bolder text-white" href="/">ICT</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-5 fw-semibold">
+                <!-- <div class="navbar-nav ms-5 fw-semibold">
                     <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
                     <a class="nav-link active text-white d-none bmobile" aria-current="page"
                         href="{{ route('register') }}">Register</a>
                     {{-- <a class="nav-link ms-3 text-white" href="#">About</a> --}}
-                </div>
+                </div> -->
                 <div class="navbar-nav ms-auto rmobile">
-                    <a href="{{ route('register') }}"
-                        class="nav-link btn btn-outline-light px-4 fw-bolder text-white regis">Register</a>
+                    <a href="{{ route('register') }}" class="nav-link btn btn-outline-light px-4 fw-bolder text-white regis">Register</a>
                 </div>
             </div>
         </div>
@@ -184,8 +181,7 @@
         <h1 class="text-uppercase fw-bold hjmobile">Ingin cari teman</h1>
         <p class="mt-3 lh-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, non.<br> Lorem ipsum
             dolor sit ametconsectetur adipisicing elit.</p>
-        <a href="{{ route('login') }}"
-            class="btmobile btn btn-outline-light text-white regis2 fs-6 px-4 fw-bolder mt-2">
+        <a href="{{ route('login') }}" class="btmobile btn btn-outline-light text-white regis2 fs-6 px-4 fw-bolder mt-2">
             LOGIN
         </a>
     </div>
@@ -195,21 +191,18 @@
         <div class="bg-dark pb-3 position-relative w-100 h-auto text-white mobile">
             <div class="d-flex p-3 container text-uppercase fw-bold justify-content-around align-items-center">
                 <div class="igm">
-                    <a href="https://www.instagram.com/rendihndra/" target="blank"
-                        class="lig text-decoration-none text-white">
+                    <a href="https://www.instagram.com/rendihndra/" target="blank" class="lig text-decoration-none text-white">
                         <i class="bi bi-instagram igm" style="font-size: 20px; margin-right: 10px;"></i>
                         Instagram
                     </a>
                 </div>
                 <div class="igm">
-                    <a href="https://twitter.com/RendiHendra2" target="blank"
-                        class="lw text-decoration-none text-white">
+                    <a href="https://twitter.com/RendiHendra2" target="blank" class="lw text-decoration-none text-white">
                         <i class="bi bi-twitter igm" style="font-size: 20px; margin-right: 10px;"></i>twitter
                     </a>
                 </div>
                 <div class="igm">
-                    <a href="https://www.facebook.com/sri.wiyanti.5243/" target="blank"
-                        class=" lf text-decoration-none text-white">
+                    <a href="https://www.facebook.com/sri.wiyanti.5243/" target="blank" class=" lf text-decoration-none text-white">
                         <i class="bi bi-facebook igm" style="font-size: 20px; margin-right: 10px;"></i>
                         Facebook
                     </a>
@@ -230,8 +223,7 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
 </body>
 

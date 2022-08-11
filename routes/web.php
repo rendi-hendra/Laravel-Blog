@@ -7,6 +7,7 @@ use App\Http\Controllers\usercon;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardPostController;
 use App\Models\User;
+use GuzzleHttp\Middleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -72,3 +73,6 @@ Route::get('/authors/{author:username}', function (User $author) {
         'postingan' => $author->posts
     ]);
 });
+
+Route::get('/posting/checkSlug', [DashboardPostController::class, "check.slug"])
+    ->middleware('auth');
